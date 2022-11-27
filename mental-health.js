@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk');
-const { rando } = require('@nastyox/rando.js');
+const chalk = require("chalk");
 
 const COLORS = [
   "red",
@@ -19,7 +18,8 @@ const COLORS = [
   "magentaBright",
   "cyanBright",
   "whiteBright",
-]
+];
+
 const PROMPTS = [
   "Remember to take breaks!",
   "When did you last step away from the keyboard and take a break?",
@@ -44,20 +44,24 @@ const PROMPTS = [
   "Are you hydrated?",
   "Ice cream break? 🍦",
   "Let's watch a cat video! 🐈",
-  "How's your posture?"
+  "How's your posture?",
 ];
 
 function main() {
-  const prompt = PROMPTS[Math.floor(Math.random() * PROMPTS.length)]
-  
-  console.log(chalk[rando(COLORS).value].bold('♥') + ':', prompt)
+  const prompt = PROMPTS[Math.floor(Math.random() * PROMPTS.length)];
+  const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+
+  console.log(chalk[color].bold("♥") + ":", prompt);
 }
 
-if (require.main === module || ['postinstall'].includes(process.env.npm_lifecycle_event)) {
+if (
+  require.main === module ||
+  ["postinstall"].includes(process.env.npm_lifecycle_event)
+) {
   main();
 }
 
 module.exports = {
   main,
   PROMPTS,
-}
+};
