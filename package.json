@@ -1,6 +1,6 @@
 {
   "name": "mental-health",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A periodical reminder to take care of your mental health.",
   "main": "mental-health.js",
   "bin": {
