@@ -39,7 +39,7 @@ const PROMPTS = [
   "You're good at what you do!",
   "Did you read any good books lately?",
   "Your code is beautiful!",
-  "Give break to your eyes by looking at something far away",
+  "Give a break to your eyes by looking at something far away",
   "Get some fresh air!",
   "Are you hydrated?",
   "Ice cream break? 🍦",
