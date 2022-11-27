@@ -1,0 +1,24 @@
+{
+  "name": "mental-health",
+  "version": "0.2.0",
+  "description": "A periodical reminder to take care of your mental health.",
+  "main": "mental-health.js",
+  "bin": {
+    "mental-health": "./mental-health"
+  },
+  "scripts": {
+    "postinstall": "node -e \"try{require('./mental-health')}catch(e){}\"",
+    "mental-health": "./mental-health"
+  },
+  "keywords": [
+    "Mental Health"
+  ],
+  "author": "Viljami Kuosmanen <viljami@viljami.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
+}
